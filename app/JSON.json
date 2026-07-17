@@ -1,0 +1,406 @@
+{
+  "tabs": {
+    "basicInfo": {
+      "type": "section",
+      "label": "Basic Information",
+      "fields": [
+        {
+          "name": "companyName",
+          "type": "text",
+          "label": "Company Name",
+          "placeholder": "GIFTIFY"
+        },
+        {
+          "name": "logo",
+          "type": "url",
+          "label": "Company Logo URL",
+          "placeholder": "https://bitbusters.netlify.app/logo.png"
+        },
+        {
+          "name": "tagline",
+          "type": "text",
+          "label": "Tagline",
+          "placeholder": "Luxury Corporate Gifting"
+        }
+      ]
+    },
+    "heroSection": {
+      "type": "section",
+      "label": "Hero Section",
+      "fields": [
+        {
+          "name": "title",
+          "type": "text",
+          "label": "Hero Title",
+          "placeholder": "Curate the Perfect"
+        },
+        {
+          "name": "highlight",
+          "type": "text",
+          "label": "Highlighted Text",
+          "placeholder": "Impression."
+        },
+        {
+          "name": "description",
+          "type": "textarea",
+          "label": "Hero Description",
+          "placeholder": "Delight clients, employees and loved ones with beautifully curated luxury gifts designed to leave unforgettable impressions and build meaningful relationships."
+        },
+        {
+          "name": "buttonText",
+          "type": "text",
+          "label": "Button Text",
+          "placeholder": "Explore Gifts"
+        },
+        {
+          "name": "image",
+          "type": "url",
+          "label": "Hero Image URL",
+          "placeholder": "https://www.thegoodroad.in/cdn/shop/files/S_P_7561web.jpg?v=1737103898"
+        },
+        {
+          "name": "priceLabel",
+          "type": "text",
+          "label": "Price Label",
+          "placeholder": "From ₹999"
+        },
+        {
+          "name": "bottomText",
+          "type": "text",
+          "label": "Bottom Text on Hero Image",
+          "placeholder": "Premium Curated Gifts"
+        },
+        {
+          "name": "stat1Number",
+          "type": "text",
+          "label": "Stat 1 Number",
+          "placeholder": "150+"
+        },
+        {
+          "name": "stat1Label",
+          "type": "text",
+          "label": "Stat 1 Label",
+          "placeholder": "Luxury Brands"
+        },
+        {
+          "name": "stat2Number",
+          "type": "text",
+          "label": "Stat 2 Number",
+          "placeholder": "10K+"
+        },
+        {
+          "name": "stat2Label",
+          "type": "text",
+          "label": "Stat 2 Label",
+          "placeholder": "Happy Clients"
+        },
+        {
+          "name": "stat3Number",
+          "type": "text",
+          "label": "Stat 3 Number",
+          "placeholder": "4.9★"
+        },
+        {
+          "name": "stat3Label",
+          "type": "text",
+          "label": "Stat 3 Label",
+          "placeholder": "Customer Rating"
+        }
+      ]
+    },
+    "aboutSection": {
+      "type": "section",
+      "label": "About Section",
+      "fields": [
+        {
+          "name": "badge",
+          "type": "text",
+          "label": "Badge/Label",
+          "placeholder": "Crafted With Care"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "label": "About Title",
+          "placeholder": "The subtle art of"
+        },
+        {
+          "name": "highlight",
+          "type": "text",
+          "label": "Highlighted Text",
+          "placeholder": "making them feel special."
+        },
+        {
+          "name": "description",
+          "type": "textarea",
+          "label": "About Description",
+          "placeholder": "We believe that the unboxing experience is just as important as the gift itself. Every detail, from the textured ribbon to the weight of the cardstock, is meticulously chosen to exude elegance."
+        },
+        {
+          "name": "image",
+          "type": "url",
+          "label": "About Image URL",
+          "placeholder": "https://m.media-amazon.com/images/I/910JoLxRjoL._AC_UF894,1000_QL80_.jpg"
+        }
+      ]
+    },
+    "giftsSection": {
+      "type": "dynamic-section",
+      "label": "Gifts Section",
+      "fields": [
+        {
+          "name": "badge",
+          "type": "text",
+          "label": "Badge/Label",
+          "placeholder": "Our Masterpieces"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "label": "Section Title",
+          "placeholder": "Curated"
+        },
+        {
+          "name": "highlight",
+          "type": "text",
+          "label": "Highlighted Text",
+          "placeholder": "Collection"
+        },
+        {
+          "name": "gifts",
+          "type": "dynamic-array",
+          "label": "Gift Items",
+          "itemFields": [
+            {
+              "name": "id",
+              "type": "number",
+              "label": "ID",
+              "placeholder": "1"
+            },
+            {
+              "name": "title",
+              "type": "text",
+              "label": "Gift Title",
+              "placeholder": "Luxury Chocolate Hamper"
+            },
+            {
+              "name": "price",
+              "type": "text",
+              "label": "Price",
+              "placeholder": "₹3499"
+            },
+            {
+              "name": "desc",
+              "type": "textarea",
+              "label": "Description",
+              "placeholder": "A curated box of artisanal luxury chocolates with gold foil detailing."
+            },
+            {
+              "name": "image",
+              "type": "url",
+              "label": "Gift Image URL",
+              "placeholder": "https://chocolove.in/cdn/shop/files/Nutlover_gifthamoer.jpg?v=1725903118"
+            }
+          ],
+          "placeholder": "Luxury Chocolate Hamper | ₹3499 | A curated box of artisanal luxury chocolates. | /image1.jpg, Botanical Home Fragrance | ₹2899 | Hand-poured artisan candles. | /image2.jpg"
+        }
+      ]
+    },
+    "testimonialsSection": {
+      "type": "dynamic-section",
+      "label": "Testimonials Section",
+      "fields": [
+        {
+          "name": "badge",
+          "type": "text",
+          "label": "Badge/Label",
+          "placeholder": "Testimonials"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "label": "Section Title",
+          "placeholder": "Loved by"
+        },
+        {
+          "name": "highlight",
+          "type": "text",
+          "label": "Highlighted Text",
+          "placeholder": "Clients"
+        },
+        {
+          "name": "testimonials",
+          "type": "dynamic-array",
+          "label": "Testimonial Items",
+          "itemFields": [
+            {
+              "name": "id",
+              "type": "number",
+              "label": "ID",
+              "placeholder": "1"
+            },
+            {
+              "name": "name",
+              "type": "text",
+              "label": "Client Name",
+              "placeholder": "Sarah Jenkins"
+            },
+            {
+              "name": "designation",
+              "type": "text",
+              "label": "Designation",
+              "placeholder": "HR Director, TechFlow"
+            },
+            {
+              "name": "quote",
+              "type": "textarea",
+              "label": "Testimonial Quote",
+              "placeholder": "Using GIFTIFY completely transformed our holiday gifting process."
+            }
+          ],
+          "placeholder": "Sarah Jenkins | HR Director, TechFlow | Using GIFTIFY completely transformed our holiday gifting process., David Chen | CEO, InnovateX | The easiest platform we've used for corporate rewards."
+        }
+      ]
+    },
+    "faqSection": {
+      "type": "dynamic-section",
+      "label": "FAQs Section",
+      "fields": [
+        {
+          "name": "badge",
+          "type": "text",
+          "label": "Badge/Label",
+          "placeholder": "FAQs"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "label": "Section Title",
+          "placeholder": "Your"
+        },
+        {
+          "name": "highlight",
+          "type": "text",
+          "label": "Highlighted Text",
+          "placeholder": "Questions"
+        },
+        {
+          "name": "faqs",
+          "type": "dynamic-array",
+          "label": "FAQ Items",
+          "itemFields": [
+            {
+              "name": "question",
+              "type": "text",
+              "label": "Question",
+              "placeholder": "How do I start sending premium gifts?"
+            },
+            {
+              "name": "answer",
+              "type": "textarea",
+              "label": "Answer",
+              "placeholder": "Simply create a concierge account, choose a curated collection or set a budget."
+            }
+          ],
+          "placeholder": "How do I start sending premium gifts? | Simply create a concierge account and choose a curated collection., Can I customize the gifts with our brand? | Absolutely. We offer bespoke branding options."
+        }
+      ]
+    },
+    "contactInfo": {
+      "type": "section",
+      "label": "Contact Information",
+      "fields": [
+        {
+          "name": "phone",
+          "type": "text",
+          "label": "Phone Number",
+          "placeholder": "+91 12345 67890"
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "label": "Email Address",
+          "placeholder": "giftify@gmail.com"
+        },
+        {
+          "name": "address",
+          "type": "textarea",
+          "label": "Office Address",
+          "placeholder": "Mumbai, Maharashtra"
+        },
+        {
+          "name": "whatsapp",
+          "type": "text",
+          "label": "WhatsApp Number",
+          "placeholder": "+91 12345 67890"
+        }
+      ]
+    },
+    "socialLinks": {
+      "type": "section",
+      "label": "Social Links",
+      "fields": [
+        {
+          "name": "instagram",
+          "type": "text",
+          "label": "Instagram URL",
+          "placeholder": "https://www.instagram.com/"
+        },
+        {
+          "name": "facebook",
+          "type": "text",
+          "label": "Facebook URL",
+          "placeholder": "https://www.facebook.com/"
+        },
+        {
+          "name": "linkedin",
+          "type": "text",
+          "label": "LinkedIn URL",
+          "placeholder": "https://www.linkedin.com/"
+        }
+      ]
+    },
+    "footerSection": {
+      "type": "section",
+      "label": "Footer Section",
+      "fields": [
+        {
+          "name": "companyName",
+          "type": "text",
+          "label": "Company Name",
+          "placeholder": "GIFTIFY"
+        },
+        {
+          "name": "logo",
+          "type": "url",
+          "label": "Footer Logo URL",
+          "placeholder": "https://bitbusters.netlify.app/logo.png"
+        },
+        {
+          "name": "description",
+          "type": "textarea",
+          "label": "Footer Description",
+          "placeholder": "Elevating corporate relationships through the power of exceptional, unforgettable gifting."
+        },
+        {
+          "name": "quickLinksLabel",
+          "type": "text",
+          "label": "Quick Links Label",
+          "placeholder": "Quick Links"
+        },
+        {
+          "name": "contactLabel",
+          "type": "text",
+          "label": "Contact Label",
+          "placeholder": "Contact"
+        },
+        {
+          "name": "copyright",
+          "type": "text",
+          "label": "Copyright Text",
+          "placeholder": "© 2026 GIFTIFY. All rights reserved."
+        }
+      ]
+    }
+  }
+}
