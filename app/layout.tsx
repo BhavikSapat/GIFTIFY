@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Corporate Gifting",
-  description: "Curated premium gifts that create lasting impressions for clients, teams, and loved ones.Luxury gifting made effortless with elegant collections and unforgettable experiences.",
+  title: "GIFTIFY",
+  description: "Curated premium gifts that create lasting impressions for clients, teams, and loved ones. Luxury gifting made effortless with elegant collections and unforgettable experiences.",
+  icons: {icon: "https://bitbusters.netlify.app/logo.png" },
 };
 
 export default function RootLayout({
