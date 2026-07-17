@@ -203,7 +203,7 @@ export default function LuxuryLandingPage({ data }: { data: any }) {
     },
   ];
 
-  const gifts = safeParseArray(data?.gifts, defaultGifts);
+  const gifts = safeParseArray(giftsSection?.gifts, defaultGifts);
 
   // Testimonials Section
   const testimonialsBadge = testimonialsSection.badge || "Testimonials";
@@ -231,7 +231,7 @@ export default function LuxuryLandingPage({ data }: { data: any }) {
     },
   ];
 
-  const testimonials = safeParseTestimonials(data?.testimonials, defaultTestimonials);
+  const testimonials = safeParseTestimonials(testimonialsSection?.testimonials, defaultTestimonials);
 
   // FAQ Section
   const faqBadge = faqSection.badge || "FAQs";
@@ -257,7 +257,7 @@ export default function LuxuryLandingPage({ data }: { data: any }) {
     },
   ];
 
-  const faqs = safeParseFaqs(data?.faqs, defaultFaqs);
+  const faqs = safeParseFaqs(faqSection?.faqs, defaultFaqs);
 
   // Footer Section
   const footerCompanyName = footerSection.companyName || "GIFTIFY";
