@@ -1,23 +1,24 @@
-export const dynamic = "force-dynamic";
+import { getTranslations } from "next-intl/server";export const dynamic = "force-dynamic";
 import React from "react";
 import CorporateGiftingTemplate from "./CorporateGiftingTemplate";
-const page = async () => {
+
+const page = async () => {const t = await getTranslations();
   const Responce = await fetch(
     "https://store-admin-uat.actifyzone.com/store-uat/api/dynamic-template",
     {
-      method: "GET",
+      method: t("page.get"),
       headers: {
-        "X-Tenant-ID": "20",
-      },
-    },
+        "X-Tenant-ID": "20"
+      }
+    }
   );
   const Data = await Responce.json();
 
   return (
     <div>
       <CorporateGiftingTemplate data={Data.formJson[0]} />
-    </div>
-  );
+    </div>);
+
 };
 
 export default page;
