@@ -299,12 +299,14 @@ export default function LuxuryLandingPage({ data }: { data: any }) {
   const nextTestimonial = () => setTestimIndex((prev) => (prev + 1) % testimonials.length);
   const prevTestimonial = () => setTestimIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
 
-  const visibleTestimonials = [
-    testimonials[testimIndex],
-    testimonials[(testimIndex + 1) % testimonials.length],
-    testimonials[(testimIndex + 2) % testimonials.length],
-  ];
-
+const visibleTestimonials = testimonials.length >= 3 
+  ? [
+      testimonials[testimIndex],
+      testimonials[(testimIndex + 1) % testimonials.length],
+      testimonials[(testimIndex + 2) % testimonials.length],
+    ]
+  : testimonials;
+const whatsappClean = whatsappNumber.replace(/\s/g, '');
   return (
     <>
       <style>{`
@@ -335,7 +337,7 @@ export default function LuxuryLandingPage({ data }: { data: any }) {
         </div>
 
         {/* Floating Actions */}
-        <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noreferrer"
+        <a href={`https://wa.me/${whatsappClean}`} target="_blank" rel="noreferrer"
           className="fixed bottom-8 right-8 z-50 bg-gradient-to-tr from-[#25D366] to-[#45E681] text-white p-4 rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:scale-110 hover:-translate-y-1 transition-all duration-300 group">
           <MessageCircle size={28} className="group-hover:rotate-12 transition-transform" />
         </a>
@@ -377,7 +379,7 @@ export default function LuxuryLandingPage({ data }: { data: any }) {
             </div>
 
             <div className="hidden md:flex items-center space-x-6">
-              <a href={`https://wa.me/${whatsappNumber}`} className="p-2.5 bg-white/50 rounded-full hover:bg-white transition-colors border border-white/50 text-[#FF7A45] shadow-sm hover:shadow-md hover:scale-105">
+              <a href={`https://wa.me/${whatsappClean}`} className="p-2.5 bg-white/50 rounded-full hover:bg-white transition-colors border border-white/50 text-[#FF7A45] shadow-sm hover:shadow-md hover:scale-105">
                 <MessageCircle size={18} />
               </a>
               <a href={`mailto:${email}`} className="p-2.5 bg-white/50 rounded-full hover:bg-white transition-colors border border-white/50 text-[#FF7A45] shadow-sm hover:shadow-md hover:scale-105">
